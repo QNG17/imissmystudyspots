@@ -5,18 +5,32 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <main>
-            <section>
+        <main class="content">
+            <section class="left-column">
                 <div class="wrapper">
                     <h1>I Miss My <br> Study Spots</h1>
-                    <app-spotify-player>
-                        <div class="music-wrapper">
-                            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/27NoLa4eo63FGqXnuR1jPB?utm_source=generator&theme=0" width="100%" height="400" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        </div>
-                    </app-spotify-player>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/27NoLa4eo63FGqXnuR1jPB?utm_source=generator&theme=0" width="100%" height="400" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                 </div>
             </section>
-        </main>
+            <section class="center-column">
+                <div>
+                    <img src="assets/images/city_street.png" class="image-contain">
+                </div>
+            </section>
+            <section class="right-column">
+                <audio controls loop>
+                    <source src="assets/sounds/birds.mp3" type="audio/mpeg">
+                </audio>
+                <audio controls loop>
+                    <source src="assets/sounds/restaurant.mp3" type="audio/mpeg">
+                </audio>
+                <audio controls loop>
+                    <source src="assets/sounds/street_music.mp3" type="audio/mpeg">
+                </audio>
+                <audio controls loop>
+                    <source src="assets/sounds/train.mp3" type="audio/mpeg">
+                </audio>
+            </section>
     <footer>
     </footer>
 
