@@ -1,0 +1,26 @@
+body {
+    background-color: blanchedalmond;
+}
+
+.wrapper {
+    width: 300px;
+    padding: 40px;
+    margin: 20px;
+}
+
+section {
+    width: 25%;
+    height: 100%;
+    padding: 4rem;
+    min-width: 250px;
+    display: block;
+}
+
+.music-wrapper {
+    width: 250px;
+    height: 330px;
+}
+
+h1 {
+    font-size: 40px;
+}
