@@ -42,10 +42,11 @@ section {
 }
 
 .left-column {
-    width: 19%;
+    width: 25%;
     height: 100%;
     padding: 0.5rem;
     min-width: 250px;
+    text-align: center;
 }
 
 .center-column {
@@ -73,9 +74,3 @@ img {
     object-fit: contain;
 }
 
-.wrapper {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
