@@ -3,16 +3,8 @@ body {
     background-color: blanchedalmond;
     margin:0;
     height: 100%;
-    font-family: new-spirit,serif;
     font-weight: 400;
     font-style: normal;
-    transition: background-color .5s ease-in-out;
-}
-
-.wrapper {
-    width: 300px;
-    padding: 40px;
-    margin: 20px;
 }
 
 h1 {
@@ -22,19 +14,38 @@ h1 {
 main {
     display: flex;
     min-height: 100vh;
-    padding: 4rem;
-    padding-top: calc(4rem + 10px);
+    padding: 10px;
     justify-content: space-evenly;
     align-items: center;
     box-sizing: border-box;
     position: relative;
     opacity: 0;
-    transition: 0.7s all ease-in;
+    transition: 0.8s all ease-in;
 }
 
 main.content {
     opacity: 1;
-    padding: 6rem 4rem 4rem;
+    padding: 50px;
+}
+
+.navbar {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    background-color: #555;
+    overflow: auto;
+}
+
+.navbar a {
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    text-align: center;
+}
+  
+.navbar a:hover {
+    color: #31acc5;
 }
 
 section {
@@ -44,7 +55,8 @@ section {
 .left-column {
     width: 25%;
     height: 100%;
-    padding: 0.5rem;
+    padding: 5px;
+    margin: 50px;
     min-width: 250px;
     text-align: center;
 }
@@ -52,14 +64,16 @@ section {
 .center-column {
     width: 45%;
     height: 100%;
-    padding: 0.5rem;
+    padding: 5px;
+    margin: 50px;
     min-width: 250px;
 }
 
 .right-column {
     width: 25%;
     height: 100%;
-    padding: 0.5rem;
+    padding: 5px;
+    margin: 50px;
     min-width: 250px;
 }
 
