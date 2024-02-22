@@ -1,10 +1,12 @@
 
 body {
-    background-color: blanchedalmond;
+    background-color: antiquewhite;
     margin:0;
     height: 100%;
     font-weight: 400;
     font-style: normal;
+    align-items: center;
+    justify-content: center;
 }
 
 h1 {
@@ -21,6 +23,7 @@ main {
     position: relative;
     opacity: 0;
     transition: 0.8s all ease-in;
+    float: inherit;
 }
 
 main.content {
@@ -52,29 +55,8 @@ section {
     display:block;
 }
 
-.left-column {
-    width: 25%;
-    height: 100%;
-    padding: 5px;
-    margin: 50px;
-    min-width: 250px;
-    text-align: center;
-}
-
-.center-column {
-    width: 45%;
-    height: 100%;
-    padding: 5px;
-    margin: 50px;
-    min-width: 250px;
-}
-
-.right-column {
-    width: 25%;
-    height: 100%;
-    padding: 5px;
-    margin: 50px;
-    min-width: 250px;
+.noscript {
+    text-align: center
 }
 
 img {
@@ -97,4 +79,132 @@ img {
     100% { opacity: 1; }
   }
 
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 70%;
+    margin: auto;
+}
 
+.grid-container {
+    display: grid;
+    grid-template-columns: minmax(150px, 1fr) minmax(300px, 2fr) minmax(150px, 1fr);
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center; 
+}
+
+.grid-item {
+    padding: 20px;
+    text-align: center;
+    min-width: 200px;
+    box-sizing: border-box;
+}
+
+.carousel-inner img {
+    object-fit: cover; /* Maintain aspect ratio and cover container */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Equal width columns */
+    grid-gap: 20px;
+    min-width: auto; /* Set your desired minimum width */
+    height: auto;
+    object-fit: cover;
+    overflow: hidden; /* or overflow: auto; depending on your preference */
+}
+
+#aboutLink {
+    cursor: pointer;
+    text-decoration: none; /* Remove default underline */
+    font-size: 30px; /* Adjust the font size as needed */
+    display: inline-block;
+    position: relative; /* Create a stacking context for the ::after pseudo-element */
+    transition: color 0.3s ease; /* Add a smooth transition for the text color */
+}
+
+#aboutLink::after {
+    content: ''; /* Add an empty content for the pseudo-element */
+    position: absolute;
+    width: 100%; /* Make the underline span the full width of the element */
+    transform: scaleX(0);
+    height: 2px; /* Set the height of the underline */
+    bottom: 0; /* Position the underline at the bottom of the element */
+    left: 0;
+    background-color: #0087ca; /* Set the initial color of the underline */
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out, background-color 0.3s ease; /* Add transitions for the underline */
+}
+
+#aboutLink:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+  
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.spotify-container {
+    min-height: 200px; /* Set a min-height to ensure space for the content */
+}
+
+@media only screen and (max-width: 1200px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
+    }
+}
+
+@media (max-width: 768px) {
+    /* Adjust layout for smaller screens */
+    .grid-container {
+        grid-template-columns: 1fr; /* Single column for smaller screens */
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)); 
+    }
+}
