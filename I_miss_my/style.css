@@ -31,26 +31,6 @@ main.content {
     padding: 50px;
 }
 
-.navbar {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    background-color: #555;
-    overflow: auto;
-}
-
-.navbar a {
-    padding: 12px;
-    color: white;
-    text-decoration: none;
-    font-size: 30px;
-    text-align: center;
-}
-  
-.navbar a:hover {
-    color: #31acc5;
-}
-
 section {
     display:block;
 }
@@ -72,6 +52,7 @@ img {
 
 .fade-in { 
     animation: fadeIn 2s; 
+    background-color: antiquewhite;
 }
 
 @keyframes fadeIn {
