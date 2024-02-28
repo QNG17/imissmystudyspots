@@ -7,6 +7,7 @@
         <title> I Miss My Study Spots</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <script src="https://sdk.scdn.co/spotify-player.js"></script>
@@ -48,7 +49,7 @@
                                 <img src="assets/images/cafe.jpeg" class="image-contain" alt="cafe">
                             </div>
                             <div class="item">
-                                <img src="assets/images/library.jpeg" class="image-contain" alt="library">
+                                <img src="assets/images/room.jpg" class="image-contain" alt="library">
                             </div>
                         </div>
                     
@@ -64,21 +65,30 @@
                     </div>
                 </div>
                     <div class="grid-item autio-container">
-                        <audio controls loop>
-                            <source src="assets/sounds/birds.mp3" type="audio/mpeg">
-                        </audio>
-
-                        <audio controls loop>
-                            <source src="assets/sounds/restaurant.mp3" type="audio/mpeg">
-                        </audio>
-
-                        <audio controls loop>
-                            <source src="assets/sounds/street_music.mp3" type="audio/mpeg">
-                        </audio>
-                        
-                        <audio controls loop>
-                            <source src="assets/sounds/train.mp3" type="audio/mpeg">
-                        </audio>
+                        <div class="audio-item">
+                            <label>Birds</label>
+                            <audio controls loop>
+                                <source src="assets/sounds/birds.mp3" type="audio/mpeg">
+                            </audio>
+                        </div>
+                        <div class="audio-item">
+                            <label>Restaurant</label>
+                            <audio controls loop>
+                                <source src="assets/sounds/restaurant.mp3" type="audio/mpeg">
+                            </audio>
+                        </div>
+                        <div class="audio-item">
+                            <label>Street Music</label>
+                            <audio controls loop>
+                                <source src="assets/sounds/street_music.mp3" type="audio/mpeg">
+                            </audio>
+                        </div>
+                        <div class="audio-item">
+                            <label>Train</label>
+                            <audio controls loop>
+                                <source src="assets/sounds/train.mp3" type="audio/mpeg">
+                            </audio>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -86,5 +96,6 @@
         <footer>
         </footer>
         <script src="modal.js"> </script>
+        <script src="volume.js"></script>
     </body>
 </html>
