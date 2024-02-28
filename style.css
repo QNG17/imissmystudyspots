@@ -165,6 +165,63 @@ img {
     min-height: 200px; /* Set a min-height to ensure space for the content */
 }
 
+
+label {
+    font-size: 16px;
+    margin-bottom: 5px;
+
+}
+
+.audio-controls {
+    display: flex;
+    flex-direction: flex-start; 
+    align-items: center;
+    justify-content: center; /* Updated to center */
+}
+
+.audio-item {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.play-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px; /* Updated margin */
+}
+
+.play-icon::before {
+    content: '\25B6'; /* Unicode character for play */
+}
+
+.stop-icon::before {
+    content: '\25A0'; /* Unicode character for stop */
+}
+
+.volume-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px; /* Added margin */
+}
+
+.volume-icon::before {
+    content: '\1F50A'; /* Unicode character for speaker */
+    font-size: 24px;
+    margin-right: 10px; /* Added margin */
+}
+
+.volume-slider {
+    width: 100%;
+    max-width: 200px; /* Updated max-width */
+}
+
 @media only screen and (max-width: 1200px) {
     .grid-container {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
